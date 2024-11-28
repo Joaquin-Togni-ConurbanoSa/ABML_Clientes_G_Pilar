@@ -1,0 +1,395 @@
+﻿
+
+.cuerpo {
+    background-image: url('../Imagenes/logistics-staging-area-warehouse.1.0.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    /*height: 100vh;*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bodyAlta {
+    background-image: url('../Imagenes/logistics-staging-area-warehouse.1.0.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Estilos para los warnings*/
+.warning {
+    color: red;
+}
+
+
+
+
+.form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+}
+
+.form-aprobaciones {
+    max-width: 1300px; 
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 250px;
+    height: auto;
+}
+
+
+h2, h3 {
+    text-align: center;
+    color: #1E4B8E;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    color: #1E4B8E;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+    .input-field:focus {
+        border-color: rgba(0, 0, 255, 0.6);
+        outline: none;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+/* Botón */
+.btn {
+    background-color: #1E4B8E;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.client-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+    .client-info div {
+        margin-bottom: 10px;
+    }
+
+.btnAceptar {
+    background-color: #1E4B8E;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 20%;
+    margin-top: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .btnAceptar:hover {
+        background-color: #1A3D75;
+    }
+/* Indentación para los títulos de los campos */
+
+.indent {
+    margin-left: 20px; /* Ajusta este valor según el nivel de indentación que desees */
+}
+/* Grupo de campos */
+
+.field-group {
+    margin-bottom: 10px;
+    .btn:hover {
+        background-color: #1A3D75;
+    }
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+    /* Joaco */
+
+    .form-container2 {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+    }
+
+    /*.grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 255, 0.3);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 95%;
+        overflow-x: auto;
+    }*/
+
+    .custom-grid {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .custom-grid th, .custom-grid td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .custom-grid th {
+        background-color: #1E4B8E;
+        color: white;
+        font-weight: bold;
+    }
+
+    .custom-grid tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .custom-grid tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    /* Estilo general del modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1; /* Asegura que el modal se superponga */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Desplazamiento si es necesario */
+        background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+
+        .modal.open {
+            display: block;
+        }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fff;
+        margin: 5% auto; /* Centra el modal */
+        padding: 20px;
+        border: 1px solid #999999; /* Bordes grises, similar a la GridView */
+        border-radius: 4px; /* Bordes redondeados */
+        width: 80%; /* Ancho del modal */
+        max-width: 600px; /* Ancho máximo */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+    }
+
+    /* Header del modal */
+    .modal-header {
+        padding: 8px 20px;
+        /*background-color: #f1f1f1; /* Gris claro */
+        color: #333;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        /*border-bottom: 1px solid #ccc; /* Borde gris claro similar a la tabla */
+    }
+
+    /* Cerrar botón del modal */
+    .close {
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        float: right;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* Cuerpo del modal */
+    .modal-body {
+        padding: 20px;
+        font-size: 16px;
+        color: #333; /* Texto gris oscuro */
+        line-height: 1.5;
+    }
+
+    .modal-footer {
+        padding: 10px 20px;
+        /*background-color: transparent; /* Gris claro */
+        /*color: #333;*/
+        text-align: right; /* Alineación a la derecha */
+        /*border-top: 1px solid #ddd; /* Borde gris más claro */
+    }
+
+    .modal-btn {
+        background-color: #000084; /* Color de fondo del botón */
+        color: white;
+        border: 1px solid #999999; /* Borde gris similar a la GridView */
+        border-radius: 4px; /* Bordes redondeados */
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 10px; /* Espacio entre los botones */
+    }
+
+    .modal-btn:hover {
+        background-color: #333; /* Fondo oscuro cuando se pasa el mouse */
+        border-color: #666; /* Borde más oscuro */
+    }
+
+
+
+    /* Estilo para el LinkButton */
+.link-button {
+    background-color: #000084; /* Fondo gris más intenso */
+    color: white; /* Texto blanco para contraste */
+    padding: 6px 12px; /* Espaciado interno */
+    border: 1px solid #999999; /* Borde gris oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+    font-weight: normal; /* Peso de fuente normal */
+    text-align: center; /* Centrado del texto */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como botón */
+}
+
+    /* Efecto al pasar el mouse */
+    .link-button:hover {
+        background-color: #5a6368; /* Fondo gris más oscuro al pasar el mouse */
+        border-color: #4e555b; /* Borde más oscuro */
+        color: #ffffff; /* Mantener texto blanco */
+    }
+
+    /* Efecto al hacer clic */
+    .link-button:active {
+        background-color: #4e555b; /* Fondo gris aún más oscuro al hacer clic */
+        border-color: #43494e; /* Borde gris más oscuro */
+    }
+
+    /* Estilo para el foco (cuando está seleccionado) */
+    .link-button:focus {
+        outline: none; /* Quitar el borde de enfoque predeterminado */
+        box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.3); /* Resaltar con sombra gris claro */
+    }
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    /* Estilo para las celdas de encabezado */
+    .table th {
+        background-color: #1E4B8E; /* Color de fondo del encabezado */
+        color: white; /* Color del texto del encabezado */
+        padding: 10px; /* Relleno del encabezado */
+        text-align: left; /* Alineación del texto del encabezado */
+    }
+
+    /* Estilo para las celdas */
+    .table td {
+        background-color: #f9f9f9; /* Color de fondo de las celdas */
+        padding: 10px; /* Relleno de las celdas */
+        border-bottom: 1px solid #ddd; /* Borde inferior de las celdas */
+        text-align: left; /* Alineación del texto de las celdas */
+    }
+
+    /* Estilo para las filas */
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Color de fondo para filas pares */
+    }
+
+    .table tr:hover {
+        background-color: #e0e0e0; /* Color de fondo al pasar el ratón por encima */
+    }
